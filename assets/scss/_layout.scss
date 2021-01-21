@@ -1,7 +1,8 @@
 
 /*========== NAV ==========*/
 .l-header{
-    background-color:  hsla(229, 31%, 21%, 0.63);
+    // background-color:  hsla(229, 31%, 21%, 0.63);
+    background-color: $white-color !important;
 }
 .nav{
     max-width: 1024px;
@@ -9,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
    
   
     
@@ -21,7 +23,7 @@
             width: 100%;
             padding: 1.5rem 0 1rem;
             text-align: center;
-            background-color: hsla(229, 31%, 21%, 0.63);
+            // background-color: hsla(229, 31%, 21%, 0.63);
             transition: .4s;
             box-shadow: 0 4px 4px rgba(0,0,0,.1);
             border-radius: 0 0 1rem 1rem;
@@ -41,9 +43,12 @@
     
         
     }
-    &__link, &__logo, &__toggle{
+    &__link, &__logo{
         color: $text-color;
         font-weight: $font-medium;
+    }
+    path{
+        fill: $white-color;
     }
     &__logo{
         &:hover{
@@ -79,10 +84,10 @@
         
       
     }
-    &__social-links{
+    &__social-links li{
         display: inline-flex;
         align-items: center;
-        margin-top: 2rem;
+       
         li{
             margin-left: 1rem;
         }
@@ -100,7 +105,8 @@
 
 /* Change background header */
 .scroll-header{
-    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    // box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    box-shadow: 0 2px 4px #fff;
 }
 
 
