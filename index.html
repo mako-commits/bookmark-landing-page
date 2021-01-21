@@ -160,7 +160,7 @@
             <img src="assets/images/logo-chrome.svg" alt="img" class="extensions__img">
             <h3 class="extensions__name">Add Chrome</h3>
             <span class="extensions__detail">Minimum version 62</span>
-            <img src="./assets/images/bg-dots.svg" alt="img">
+            <img src="./assets/images/bg-dots.svg" class="extensions__dots" alt="img">
             <a href="#" class="button extensions__button">Add & Install Extension</a>
           </div>
         </div>
@@ -170,7 +170,7 @@
             <img src="assets/images/logo-firefox.svg" alt="img" class="extensions__img">
             <h3 class="extensions__name">Add Firefox</h3>
             <span class="extensions__detail">Minimum version 55</span>
-            <img src="./assets/images/bg-dots.svg" alt="img">
+            <img src="./assets/images/bg-dots.svg" class="extensions__dots" alt="img">
             <a href="#" class="button extensions__button">Add & Install Extension</a>
           </div>
         </div>
@@ -180,7 +180,7 @@
             <img src="assets/images/logo-opera.svg" alt="img" class="extensions__img">
             <h3 class="extensions__name">Add Opera</h3>
             <span class="extensions__detail">Minimum version 46</span>
-            <img src="./assets/images/bg-dots.svg" alt="img">
+            <img src="./assets/images/bg-dots.svg" class="extensions__dots" alt="img">
             <a href="#" class="button extensions__button">Add & Install Extension</a>
           </div>
         </div>
@@ -243,9 +243,10 @@
         <h5 class="contact__heading">35,000+ already joined</h5>
         <h2 class="contact__paragraph">Stay up-to-date with<br> what we’re doing
         </h2>
-        <form action="#" class="contact__form">
+        <form class="contact__form">
           <input type="email" id="email" class="contact__input">
-          <button class="contact__btn" type="submit">Contact Us</button>
+          <button class="contact__btn" type="submit" id="validate" onclick=validateEmail()> Contact Us</button>
+          <br> <small id="result"></small>
         </form>
       </div>
 
@@ -296,7 +297,7 @@
       Coded by <a href="https://github.com/pythagoras-dev" target="_blank">Pythagoras-Dev</a>.
     </p>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
   <!--========== SCROLL REVEAL ==========-->
   <script src="https://unpkg.com/scrollreveal"></script>

@@ -87,11 +87,12 @@
     &__social-links li{
         display: inline-flex;
         align-items: center;
+        margin-top: 2rem;
        path{
            fill:$white-color;
        }
-        li{
-            margin-left: 2rem;
+        a{
+            margin-left: 1rem;
         }
     }
 }
@@ -300,6 +301,8 @@
         font-size: 0.7rem;
         color: $white-color;
         background-color: $first-color;
+        margin-top: 1rem;
+        text-align: center;
        &:hover{
            background-color: $white-color;
            border: 1px solid $first-color;
@@ -364,6 +367,7 @@
     }
     .accordion-title {
       padding: 1em 1.5em 1em 0;
+      color: $text-color;
     }
     .icon {
        
