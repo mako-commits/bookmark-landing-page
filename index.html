@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <!--========== BOX ICONS ==========-->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 12px;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo"><img src="./assets/images/logo-bookmark.svg" alt="img"></a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__btn">Login</a></li>
+        </ul>
+
+        <ul class="nav__social-links">
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill="#FFF" fill-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+              </svg>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path fill="#FFF" fill-rule="evenodd"
+                  d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+              </svg></a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <img src="./assets/images/icon-hamburger.svg" alt="img">
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== INTRO ==========-->
+    <section class="intro">
+      <div class="intro__container bd-container bd-grid">
+        <div class="intro__data">
+          <h1 class="intro__title">A Simple Bookmark Manager</h1>
+          <p class="intro__subtitle">A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.</p>
+          <a href="#" class="intro__first-btn">Get it on Chrome</a>
+          <a href="#" class="intro__second-btn">Get it on Firefox</a>
+        </div>
+
+        <img src="assets/images/illustration-hero.svg" alt="img" class="intro__img">
+      </div>
+    </section>
+
+    <!--========== FEATURES ==========-->
+    <section class="features" id="features">
+      <div class="features__container bd-container">
+        <h2 class="features__heading">Features</h2>
+        <p class="features__paragraph">Our aim is to make it quick and easy for you to access your favourite websites.
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+
+
+
+      <div class="tabs--container bd-container">
+        <div id="tab-1" class="tabs--item tab-border">
+          <p class="tab-text ">Simple Bookmarking</p>
+        </div>
+        <div id="tab-2" class="tabs--item ">
+          <p class="tab-text">Speedy Searching</p>
+        </div>
+        <div id="tab-3" class="tabs--item">
+          <p class="tab-text">Easy Sharing</p>
+        </div>
+      </div>
+      <div class="tab bd-container">
+        <!-- Tab Content 1 -->
+        <div id="tab-1__content" class="tab--content show ">
+          <div class="tab__content">
+            <img src="./assets/images/illustration-features-tab-1.svg" alt="img" class="tab__img">
+            <div class="tab__info">
+              <h2 class="tab__heading">Bookmark in one click</h2>
+              <p class="tab__paragraph">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.</p>
+              <a href="#" class="tab__btn">More Info</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Tab Content 2 -->
+        <div id="tab-2__content" class="tab--content">
+          <div class="tab__content">
+            <img src="./assets/images/illustration-features-tab-2.svg" alt="img" class="tab__img">
+            <div class="tab__info">
+              <h2 class="tab__heading">Intelligent search</h2>
+              <p class="tab__paragraph">Our powerful search feature will help you find saved sites in no time at all.
+                No need to trawl through all of your bookmarks.</p>
+              <a href="#" class="tab__btn">More Info</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Tab 3 Content -->
+        <div id="tab-3__content" class="tab--content">
+          <div class="tab__content">
+            <img src="./assets/images/illustration-features-tab-3.svg" alt="img" class="tab__img">
+            <div class="tab__info">
+              <h2 class="tab__heading">Share your bookmarks</h2>
+              <p class="tab__paragraph">Easily share your bookmarks and collections with others. Create a shareable
+                link that you can send at the click of a button.</p>
+              <a href="#" class="tab__btn">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!--========== EXTENSIONS ==========-->
+    <section class="extensions">
+      <div class="extensions__container bd-container">
+        <h2 class="extensions__heading">Download the extension</h2>
+        <p class="extensions__paragraph">We’ve got more browsers in the pipeline. Please do let us know if you’ve
+          got a favourite you’d like us to prioritize.</p>
+
+      </div>
+      <div class="extensions__container bd-grid">
+        <div class="extensions__chrome">
+          <div class="extensions__content">
+            <img src="assets/images/logo-chrome.svg" alt="img" class="extensions__img">
+            <h3 class="extensions__name">Add Chrome</h3>
+            <span class="extensions__detail">Minimum version 62</span>
+            <img src="./assets/images/bg-dots.svg" alt="img">
+            <a href="#" class="button extensions__button">Add & Install Extension</a>
+          </div>
+        </div>
+
+        <div class="extensions__firefox">
+          <div class="extensions__content">
+            <img src="assets/images/logo-firefox.svg" alt="img" class="extensions__img">
+            <h3 class="extensions__name">Add Firefox</h3>
+            <span class="extensions__detail">Minimum version 55</span>
+            <img src="./assets/images/bg-dots.svg" alt="img">
+            <a href="#" class="button extensions__button">Add & Install Extension</a>
+          </div>
+        </div>
+
+        <div class="extensions__opera">
+          <div class="extensions__content">
+            <img src="assets/images/logo-opera.svg" alt="img" class="extensions__img">
+            <h3 class="extensions__name">Add Opera</h3>
+            <span class="extensions__detail">Minimum version 46</span>
+            <img src="./assets/images/bg-dots.svg" alt="img">
+            <a href="#" class="button extensions__button">Add & Install Extension</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="faq__container bd-container">
+        <h2 class="faq__heading">Frequently Asked Questions</h2>
+        <p class="faq__paragraph">Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What is
+                Bookmark?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+                justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">How can I request a new
+                browser?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+                Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Is there a mobile
+                app?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+                urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+                sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What about other
+                Chromium browsers?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+                vitae neque eget nisl gravida pellentesque non ut velit.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <a href="#" class="faq__btn">More Info</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact__container bd-container">
+        <h5 class="contact__heading">35,000+ already joined</h5>
+        <h2 class="contact__paragraph">Stay up-to-date with<br> what we’re doing
+        </h2>
+        <form action="#" class="contact__form">
+          <input type="email" id="email" class="contact__input">
+          <button class="contact__btn" type="submit">Contact Us</button>
+        </form>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <div class="footer__container bd-container">
+        <div class="footer__nav">
+          <img src="./assets/images/footer-logo-bookmark.svg" alt="img">
+          <ul class="footer__links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <ul class="footer__social-links">
+          <li><a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                <path fill="#FFF" fill-rule="evenodd"
+                  d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z" />
+              </svg>
+            </a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+                <path fill="#FFF" fill-rule="evenodd"
+                  d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z" />
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/pythagoras-dev" target="_blank">Pythagoras-Dev</a>.
+    </p>
+  </footer>
+  <!--========== SCROLL REVEAL ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

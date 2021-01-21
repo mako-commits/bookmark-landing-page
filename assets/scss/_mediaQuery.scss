@@ -1,0 +1,239 @@
+@media screen and (min-width: 576px){
+    .intro__container,.tabs__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+// 
+// 
+// 
+// 
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding-top: 8rem;
+    }
+    .l-header{
+        background-color: $body-color;
+    }
+    .nav{
+        height: calc($header-height + 1.5rem);
+
+        &__list{
+            display: flex;  
+             
+        }
+        &__item{
+            margin-left: $mb-5;
+            margin-bottom: 0; 
+            align-self: center;   
+            &::before {
+                display: none;
+                
+            }
+        }
+        &__toggle{
+            display: none;
+        }
+         &__btn{
+        padding: .5rem 2rem;
+        background-color: $second-color;
+        border-radius: 0.3rem;
+        color: #fff !important;
+        display: flex;
+        width: auto;
+        margin: 0;
+        &:hover{
+            background-color: #fff;
+            border: 1px solid $second-color;
+            color: $second-color !important;
+        }
+        }
+         &__link{
+        color: $very-dark-blue;;
+        
+            &:hover{
+                color: $second-color;
+            }
+         }
+         &__social-links{
+             display: none;
+         }
+    }
+/*
+
+========== INTRO ==========
+
+*/
+    .intro{
+        &__container{
+        height: 100vh;
+        justify-items: center;
+        }
+        &__img{
+        order: 1 !important;
+        }
+         &__title{
+        text-align: left;
+        
+    }
+    &__subtitle{
+        text-align: left;
+        
+    }
+    }
+     
+/*
+
+========== FEATURES ==========
+
+*/
+    // tabs
+    .tab{
+        &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+         }
+         &__img{
+          order: -1 !important;
+         }
+    }
+
+
+.tabs {
+    // background: $dark-color;
+    padding-top: 1rem;
+    border-bottom: 3px solid #3d3d3d;
+    &--container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        >div {
+            margin: 0;
+            padding: 0.1rem
+        }
+        >div:hover {
+            // color: #fff;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
+    }
+}
+
+
+ .extensions{
+        &__container{
+            grid-template-columns: repeat(3, 210px);
+            column-gap: 4rem;
+        }
+        &__content{
+            padding: 1.5rem;
+             position: relative;
+        
+        }
+        &__img{
+            width: 130px;
+        }
+        &__button{
+            margin-top: 4rem;
+        }
+        &__firefox{
+        margin-top: 4rem;
+    }
+    &__opera{
+        margin-top:8rem ;
+    }
+    }
+    
+    
+.contact{
+    background-color: $first-color;
+    padding: 3rem;
+    &__heading, &__paragraph{
+        text-align: center;
+        color: $white-color;
+    }
+    &__form{
+        text-align: center;
+        margin-top: $mb-4;
+       
+    }
+    &__btn{
+        // @extend %button;
+        border-radius: 0;
+          padding: .45rem 1rem;
+          background-color: $second-color;
+          border: 0;
+          color: $white-color;
+          cursor: pointer;
+           display: inline-flex;
+           margin: 0 auto;
+           width: 11%;
+    }
+    &__input{
+        height: 2rem;
+         width: 30%;
+         margin-bottom: $mb-2;
+    }
+}
+
+.footer{
+    background-color: $text-color;
+    padding: 0.2rem;
+    &__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+    &__nav{
+        display: flex;
+    }
+    &__links{
+       display: flex;
+       justify-content:center;
+       align-items: center;
+    }
+    &__social-links{
+        display: flex;
+        justify-content:center;
+       align-items: center;
+    }
+     li{
+        margin-top: 0;
+    }
+    a{
+        color: $white-color;
+        margin-left: $mb-3;
+    }
+}
+}
+
+
+@media screen and (min-width: 960px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .intro__img{
+        width: 500px;
+        order: 2 !important;
+    }
+
+    .about__container, .app__container{
+        column-gap: 7rem;
+    }
+}
