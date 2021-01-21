@@ -16,14 +16,14 @@
     
     &__menu{
         @media screen and (max-width: 768px){
-            height: 80vh;
+            height: 70vh;
             position: fixed;
             top: -100%;
             left: 0;
             width: 100%;
             padding: 1.5rem 0 1rem;
             text-align: center;
-            // background-color: hsla(229, 31%, 21%, 0.63);
+            background-color: hsla(229, 31%, 21%, 0.63);
             transition: .4s;
             box-shadow: 0 4px 4px rgba(0,0,0,.1);
             border-radius: 0 0 1rem 1rem;
@@ -48,7 +48,7 @@
         font-weight: $font-medium;
     }
     path{
-        fill: $white-color;
+        fill: $text-color;
     }
     &__logo{
         &:hover{
@@ -87,9 +87,11 @@
     &__social-links li{
         display: inline-flex;
         align-items: center;
-       
+       path{
+           fill:$white-color;
+       }
         li{
-            margin-left: 1rem;
+            margin-left: 2rem;
         }
     }
 }
@@ -105,8 +107,8 @@
 
 /* Change background header */
 .scroll-header{
-    // box-shadow: 0 2px 4px rgba(0,0,0,.1);
-    box-shadow: 0 2px 4px #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    // box-shadow: 0 2px 4px #fff;
 }
 
 
