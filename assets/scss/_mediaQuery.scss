@@ -14,73 +14,143 @@
 @media screen and (min-width: 768px){
     body{
         margin: 0;
+        
     }
-
+ p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: $grayish-blue;
+        line-height: 1.65;
+        margin-bottom: 4rem;
+    }
     .section{
         padding-top: 8rem;
     }
     .l-header{
         background-color: $body-color;
     }
-    .nav{
-        height: calc($header-height + 1.5rem);
 
-        &__list{
-            display: flex;  
-             
-        }
-        &__item{
-            margin-left: $mb-5;
-            margin-bottom: 0; 
-            align-self: center;   
-            &::before {
-                display: none;
-                
+     #hamburger-icon {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 10rem;
+        background: none !important;
+
+        .nav {
+            flex: 1 0 30%;
+
+            svg {
+                circle {
+                    fill: #5267DF !important;
+                }
+
+                g path{
+                    fill: #242A45 !important;
+                }
+
+                g g path {
+                    fill: #fff !important;
+                }
             }
         }
-        &__toggle{
+    }
+
+    nav {
+        display: block !important;
+        position: unset;
+        width: fit-content;
+        height: fit-content;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            margin: 0;
+        }
+
+        li {
+            width: fit-content;
+            border: none;
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            &:last-of-type a {
+                margin: 0;
+                border: 2px solid transparent;
+                background: $second-color;
+                color: $white-color;
+                border-radius: 0.5rem;
+                padding: 0.8rem;
+                &:hover {
+                    color: $second-color;
+                    background: $white-color;
+                    border: 2px solid $second-color;
+                }
+            }
+             &::before {
+                display: none;
+            }
+        }
+
+        a {
+            color: $text-color;
+            font-size: 1rem;
+            padding: 1.25rem;
+            margin: 0;
+        }
+
+        .nav__social-links {
             display: none;
         }
-         &__btn{
-        padding: .5rem 2rem;
-        background-color: $second-color;
-        border-radius: 0.3rem;
-        color: #fff !important;
-        display: flex;
-        width: auto;
-        margin: 0;
-        &:hover{
-            background-color: #fff;
-            border: 1px solid $second-color;
-            color: $second-color !important;
-        }
-        }
-         &__link{
-        color: $very-dark-blue;;
-        
-            &:hover{
-                color: $second-color;
-            }
-         }
-         &__social-links{
-             display: none;
-         }
     }
-/*
+    
+    /*
 
-========== INTRO ==========
+    ========== INTRO ==========
 
-*/
+    */
     .intro{
         &__container{
+           
         height: 100vh;
         justify-items: center;
         }
-        &__img{
-        order: 1 !important;
+        &__img{ 
+            width: 100%;
+            position: relative;
+            right: 3rem;
+            
         }
+        &__data{
+            margin-bottom: 7rem;
+        }
+         &__button-section{
+        display: block;   
+        }
+        &__image-section{
+            width: 40vw;
+             order: 1 !important;
+            position: absolute;
+            right: 0;
+            bottom:1rem;
+        }
+        &__image-pattern{
+           
+            width: 90%;
+            padding-top: 52%;
+            right: 0;
+            bottom: -3rem;
+    }
+    
          &__title{
         text-align: left;
+        font-size: 3rem;
+        font-weight: 500;
+
         
     }
     &__subtitle{
@@ -105,6 +175,12 @@
          }
          &__img{
           order: -1 !important;
+           position: relative;
+            bottom: 0.5rem;
+         }
+         &__bg{
+              left: -16.5rem;
+            width: 115%;
          }
     }
 
@@ -167,31 +243,51 @@
 .contact{
     background-color: $first-color;
     padding: 3rem;
+    padding: 7rem 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
     &__heading, &__paragraph{
         text-align: center;
         color: $white-color;
     }
     &__form{
+       
+       display: flex;
+     justify-content: center;
+        align-items: flex-start;
         text-align: center;
         margin-top: $mb-4;
-       
+      
+       div {
+            flex: 1 0 300px;
+            margin-right: 1.5rem;
+        }
+
     }
+     
     &__btn{
         // @extend %button;
-        border-radius: 0;
-          padding: .45rem 1rem;
+        border-radius: 5px;
+          padding: 1rem 1rem;
           background-color: $second-color;
           border: 0;
           color: $white-color;
           cursor: pointer;
            display: inline-flex;
            margin: 0 auto;
-           width: 11%;
+           width: 30%;
+           
     }
+     svg {
+            right: 9rem;
+            top: 1.2rem;
+        }
     &__input{
         height: 2rem;
          width: 30%;
-         margin-bottom: $mb-2;
+        
     }
 }
 
